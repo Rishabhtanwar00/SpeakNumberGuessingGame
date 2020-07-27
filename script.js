@@ -51,8 +51,11 @@ function checkNumber(msg){
     else if(num>randomNum){
         msgEl.innerHTML += '<p class="suggestion">Go Lower</p>';
     }
-    else{
+    else if(num<randomNum){
         msgEl.innerHTML += '<p class="suggestion">Go Higher</p>';
+    }
+    else{
+        
     }
 } 
 
